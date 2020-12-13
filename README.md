@@ -10,5 +10,6 @@ docker build . -t quay.io/akram/tekton-jenkinsfile-runner
 
 ## Usage
 ```
-docker run quay.io/akram/tekton-jenkinsfile-runner "https://raw.githubusercontent.com/akram/jenkinsfile-runner-openshift/f2f/Jenkinsfile"
+docker run quay.io/akram/tekton-jenkinsfile-runner <JENKINSFILE_URL>
+# eg: "https://raw.githubusercontent.com/akram/jenkinsfile-runner-openshift/f2f/Jenkinsfile"
 ```
