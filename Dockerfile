@@ -8,6 +8,7 @@ RUN  rm /app/jenkins/jenkins.war
 COPY jenkinsfile-runner-launcher.sh /app/bin/jenkinsfile-runner-launcher.sh
 COPY extract-plugins.sh /app/bin/extract-plugins.sh
 COPY cloud-kubernetes.yaml  /usr/share/jenkins/ref/casc/jenkins.yaml
+USER root
 RUN  /app/bin/extract-plugins.sh
 CMD  /app/bin/jenkinsfile-runner-launcher.sh
 ENTRYPOINT ["/app/bin/jenkinsfile-runner-launcher.sh"]
