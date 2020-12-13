@@ -10,5 +10,5 @@ for FILE in *.*; do
   echo $FILE  $PLUGIN
 done
 
-chown -R nobody $PLUGINS_DIR
-chmod a+rw -R $PLUGINS_DIR
+chown -R nobody /usr/share
+chmod ugo+rwx -R /usr/share
