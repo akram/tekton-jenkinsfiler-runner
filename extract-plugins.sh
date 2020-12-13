@@ -2,7 +2,6 @@
 
 PLUGINS_DIR=/usr/share/jenkins/ref/plugins/
 
-chmod a+rw -R $PLUGINS_DIR
 cd $PLUGINS_DIR
 for FILE in *.*; do
   PLUGIN=${FILE%%.*}
@@ -11,3 +10,4 @@ for FILE in *.*; do
   echo $FILE  $PLUGIN
 done
 
+chmod a+rw -R $PLUGINS_DIR
